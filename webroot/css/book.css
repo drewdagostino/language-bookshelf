@@ -1,0 +1,287 @@
+
+.book-title {
+	font-size:48px;
+	color:#FF8700;
+	text-align:left;
+	margin:5px auto;
+	width:82%;
+	/*text-shadow:-2px -1px 1px #A86000;*/
+}
+	.book-language {
+		font-size:24px;
+		color:#B95F00;
+		margin:5px auto;
+		width:82%;
+	}
+	
+/*BUILD THE BOOK*/
+.book_wrapper {
+	width:1200px;
+	float:left;
+	height:400px;
+}
+
+	.bottom-book-wrapper {
+		margin-top:30px;
+	}
+	
+	/*LEFT AND RIGHT ARROWS*/
+	.left-arrow-wrapper, .right-arrow-wrapper {
+		width:100px;
+		float:left;
+		height:400px;
+	}
+	
+		.left-arrow, .right-arrow {
+			width:100%;
+			height:100%;
+			margin-top:140px;
+			cursor:pointer;
+			background-repeat:no-repeat;
+		}
+		
+		.left-arrow img, .right-arrow img {
+			width:100%;
+		}
+		
+		.left-arrow {
+			background-image:url(/storybooks/img/shapes/arrow-left-dark.png);
+		}
+		
+			.left-arrow:hover {
+				background-image:url(/storybooks/img/shapes/arrow-left-light.png);
+			}
+			
+		.right-arrow {
+			background-image:url(/storybooks/img/shapes/arrow-right-dark.png);
+		}
+
+			.right-arrow:hover {
+				background-image:url(/storybooks/img/shapes/arrow-right-light.png);
+			}
+		
+		/*COVER*/
+		.book-cover-wrapper {
+			width:470px;
+			height:400px;
+			background-color:#FFF;
+			/*padding:10px;*/
+			float:left;
+			margin-left:110px;
+		}
+		
+			.book-cover-wrapper img, .book-backcover-wrapper img {
+				width:100%;
+				height:100%;
+			}
+		
+		/*PAGES*/
+		.book-pages-wrapper {
+			width:0%; /*This turns to _ when book is opened*/
+			height:400px;
+			float:left;
+		}
+	
+		.left-page-wrapper, .right-page-wrapper {
+			width:0px; /*This turns to _ when book is opened*/
+			height:400px;
+			float:left;
+			background-color:#FFF;
+			/*padding:10px;*/
+			overflow:hidden;
+		}
+		
+			.left-page-wrapper {
+				padding-right:0px;
+				padding-left:0px;
+			}
+			
+			.right-page-wrapper {
+				padding-right:0px;
+				padding-left:0px;
+			}
+		
+		.left-page, .right-page {
+			width:0%;
+			float:left;
+			height:90%;
+			background-color:#FFF;
+			background-size:100% 100%;
+			-moz-background-size:100% 100%;
+			-webkit-background-size:100% 100%;
+			overflow:hidden;
+			padding:5% 0%;
+		}
+		
+		/*BACKCOVER*/
+		.book-backcover-wrapper {
+			width:0px; /* changes to width:400px;*/
+			height:400px;
+			background-color:#FFF;
+			padding:0px;  /* changes to padding:10px; */
+			float:left;
+		}
+		
+			.book-backcover-wrapper img {
+				width:0px; /* changes to width:100%; */
+			}
+				
+			
+/*CONTROLS*/
+.controls-wrapper {
+	width:80%;
+	height:100px;
+	margin:0px 11% 0px 9%;
+}
+
+.controls {
+	position:fixed;
+	top:100px;
+	right:0px;
+	width:300px;
+	height:200px;
+	background-color:#3C3C3C;
+	border:1px #000 solid;
+	padding:10px;
+}
+
+.next-page, .prev-page {
+	font-size:18px;
+	color:#000;
+	cursor:pointer;
+	/*margin:40px 200px;*/
+	float:left;
+	width:200px;
+	height:1px;
+	background-repeat:no-repeat;
+	visibility:hidden;/*removing these from sight for now*/
+}
+
+	.next-page {
+		/*background-image:url(/storybooks/img/book/next-page.png);*/
+		background:none;
+		display:none;
+	}
+		
+		.next-page:hover {
+		/*	background-image:url(/storybooks/img/book/next-page-hover.png);*/
+		background:none;
+		}
+
+	.prev-page {
+		float:right;
+		display:none;
+		background-image:url(/storybooks/img/book/prev-page.png);
+	}
+	
+		.prev-page:hover {
+			background-image:url(/storybooks/img/book/prev-page-hover.png);
+		}
+	
+/*READING*/
+
+.word:hover {
+	color:#FF8700;
+	cursor:pointer;
+}
+
+.highlight {
+	background-color:#fcfff4;
+}
+
+.page-bright {
+	box-shadow:inset #37D200 0px 0px 15px;
+	-moz-box-shadow:inset #37D200 0px 0px 15px;
+	-webkit-box-shadow:inset #37D200 0px 0px 15px;
+}
+
+#display-bottom-book, #hide-bottom-book {
+	padding:10px;
+	font-size:24px;
+	color:#FFF;
+	margin:10px auto;
+	width:300px;
+	text-align:center;
+	cursor:pointer;
+	color: #C8C8C8;
+	border:1px solid #D7D7D7;
+	background-color:#FFFDFA;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+}
+
+	#display-bottom-book:hover, #hide-bottom-book:hover {
+		color:#FFF;
+	}
+
+	#hide-bottom-book {
+		display:none;
+	}
+
+/*Instructions*/
+.instructions {
+	height:auto;
+	width:150px;
+	position:fixed;
+	right:-190px;
+	top:110px;
+	font-size:14px;
+	color:#7B7B7B;
+	border-top:1px dashed #8F8F8F;
+	border-bottom:1px dashed #8F8F8F;
+	padding:10px;
+	font-family:Georgia, serif;
+	font-style:italic;
+}
+
+/*Translate*/
+#translate-word-popup {
+	padding:5px;
+	font-size:20px;
+	font-weight:bold;
+	background-color:#3B6CFF;
+	border:1px #6078FF solid;
+	text-shadow:-2px -2px 1px #3C5799;
+	color:#FFF;
+	position:absolute;
+	z-index:5;
+	display:none;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+
+.translated {
+	color:#B95F00;
+}
+
+/*Welcome*/
+.welcome, .feedback-form {
+	width:48%;
+	margin:100px 25%;
+	padding:20px;
+	font-size:20px;
+	color:#393939;
+	z-index:30;
+	position:fixed;
+	background-color:#FFF;
+	border:1px solid #515151;
+	display:none;
+}
+
+	.welcome p {
+		font-size:20px;
+	}
+	
+.feedback {
+	position:fixed;
+	left:0px;
+	top:300px;
+	height:120px;
+	width:50px;
+	background-color:#14CC00;
+	border:solid 1px #158B00;
+	border-left:none;
+	cursor:pointer;
+}

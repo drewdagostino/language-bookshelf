@@ -1,0 +1,15 @@
+.pageText {
+	position:relative;
+}
+
+.caterpillar {
+	font-family:Georgia, serif;
+}
+
+.whiteBackground {
+	background-color:#FFF;
+	border:#3A3A3A 1px solid;
+	padding:10px;
+	color:#000;
+	font-family:Georgia, serif;
+}

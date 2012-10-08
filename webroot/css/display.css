@@ -1,0 +1,18 @@
+/*This file has all the edits I need to make for the wiki page to display properly in the textbook */
+
+.dablink, .mw-head, .mw-panel, #mw-panel, #mw-head, .ambox, span#References, table.toc, span#See_also, .portal, span.editsection, 
+.vertical-navbox, .reflist, .references, #External_links, .metadata, .external>ul, .navbox, .infobox, .rellink, .thumbcaption {
+	display:none;
+}
+
+.chapter_content #footer {
+	display:none;
+}
+
+p {
+	font-size:12px;
+}
+
+caption {
+	font-size:8px;
+}

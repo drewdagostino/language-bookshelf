@@ -1,0 +1,74 @@
+.homepage-slider {
+	text-align:center;	
+	width:100%;
+}
+	
+	.homepage-landing {
+		width:80%;
+		margin:5px auto;
+	}
+	
+		.homepage-landing img {
+			width:100%;
+		}
+		
+	.homepage-slide {
+		display:none;
+		position:absolute;
+		top:450px;
+	}
+	
+	#slide-1 {
+		display:block;
+	}
+	
+	.homepage-break {
+		clear:both;
+		height:700px;
+	}
+	
+	.sticker-wrapper {
+		width:940px;
+		height:100px;
+		margin:auto;
+		top:300px;
+		position:absolute;
+		z-index:5;
+	}
+	
+		.sticker-description {
+			width:900px;
+			height:100px;
+			background:none;
+			border-top:1px #CFCFCF dashed;
+			border-bottom:1px #CFCFCF dashed;
+			float:right;
+			padding:10px;
+			color:#393939;
+			font-size:40px;
+			text-shadow:-2px -1px 1px #FFF;
+		}
+		
+		.try-sticker {
+			width:200px;
+			float:right;
+			position:relative;
+			z-index:6;
+			bottom:160px;
+			left:80px;
+		}
+	
+		.try-sticker img {
+			width:100%;
+		}
+		
+		.try-inv-link {
+			width:1020px;
+			height:120px;
+			margin:auto;
+			top:300px;
+			position:absolute;
+			z-index:10;
+			background:none;
+			cursor:pointer;
+		}

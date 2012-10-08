@@ -1,0 +1,526 @@
+html, body {
+	font-family:Helvetica, sans-serif;
+	padding:0;
+	margin:0;
+	background-color:#FFF;
+	background-image:url(/storybooks/img/bg-texture.png);
+	background-repeat:repeat;/storybooks/img
+	height:100%;
+	overflow-y:auto;
+	min-width:1024px;
+	color:#393939;
+}
+
+a {
+	color:#82A1FF;
+}
+
+a:visited {
+	color:#82A1FF;
+	text-decoration:none;
+}
+
+ul {
+	list-style-type:none;
+}
+
+#page_wrapper {
+	min-height:100%;
+	min-height:600px;
+	/*_height:75%; /*Stupid IE*/
+	width:100%;
+	min-width:1024px;
+	float:left;
+}
+
+	.msie7 #page_wrapper, .msie8 #page_wrapper {
+		position:static;
+	}
+
+#body_wrapper {
+	width:1024px;
+	margin:0 auto;
+	height:100%;
+	margin-top:20px;
+	min-width:1024px;
+}
+
+#header_wrapper {
+	width:100%;
+	margin:0 auto;
+	margin-bottom:30px;
+	height:80px;
+	box-shadow:#999 0px 2px 5px;
+	-moz-box-shadow:#999 0px 2px 5px;
+	-webkit-box-shadow:#999 0px 2px 5px;
+}
+
+	#header {
+		width:1024px;
+		margin:0 auto;
+	}
+
+	#logo {
+		margin-top:0px;
+		width:40%;
+		float:left;
+	}
+
+
+/*TOP NAV*/
+
+#top_nav {
+	float:right;
+	width:25%;
+	height:50px;
+}
+
+	#top_nav ul {
+		list-style-type:none;
+	}
+	
+	#top_nav li a {
+		float:left;
+		color:#FFF;
+		font-size:18px;
+		padding:15px 10px;
+		margin:5px;
+		text-align:center;
+		border-radius:10px;
+		-moz-border-radius:10px;
+		-webkit-border-radius:10px;
+		cursor:pointer;
+		text-decoration:none;
+		width:85px;
+	}
+	
+	#top_nav li a:hover {
+		color:#FF8700;
+	}
+
+	li#profile {
+		width:130px;
+		float:left;
+		text-align:center;
+		color:#454545;
+		cursor:pointer;
+	}
+	
+		li#profile:hover {
+			color:#000;
+			border:solid 1px #848484;
+		}
+	
+	li#profile img {
+		border:1px solid #474747;
+		height:36px;
+		margin:10px;
+		cursor:pointer;
+		float:left;
+	}
+	
+		li#profile img:hover {
+			border:1px solid #AEAEAE;
+		}
+		
+		li#profile div {
+			font-size:8px;
+			float:left;
+			width:48%;
+		}
+	
+	#facebook, #profile_dropdown {
+		position:absolute;
+		top:80px;
+		right:16%;
+		background-image:url(/storybooks/img/bg-black-40.png);
+		color:#FFF;
+		display:none;
+		width:150px;
+		text-align:center;
+	}
+		
+		#with_fb {
+			padding:5px;
+		}
+		
+		#with_fb a {
+			text-decoration:none;
+			color:#FFF;
+			font-size:14px;
+		}	
+		
+			#without_fb {
+				font-size:14px;
+				cursor:pointer;
+				padding:5px;
+			}
+		
+			#with_fb:hover, #without_fb:hover {
+				background-color:#535353;
+				font-size:14px;
+			}
+	
+	#profile_dropdown a {
+		width:100%;
+		padding:5px 0px;
+		float:left;
+		color:#FFF;
+		background-image:none;
+		text-shadow:none;
+		text-decoration:none;
+		width:100%;
+		margin:0;
+	}
+		
+		#profile_dropdown a:hover {
+			background-color:#535353;
+		}
+	
+/*INPUTS*/
+input {
+	color:#393939;
+}
+
+input#my_school_name {
+	width:25%;
+	height:26px;
+	font-size:22px;
+}
+
+/*Buttons*/
+
+button {
+	border:1px solid #5576E1;
+	font-size:18px;
+	padding:5px 10px;
+	margin:10px auto;
+	color:#FFF;
+	text-shadow:#000 -1px -1px 1px;
+	cursor:pointer;
+	font-family:Arial, sans-serif;
+}
+
+	button:hover {
+		text-shadow:#000 1px 1px 1px;
+	}
+	
+#add_school, #add_class {
+	padding:10px;
+	background-color:#323232;
+	color:#FFF;
+	text-shadow:#000 -1px -1px 1px;
+	text-align:center;
+	width:15%;
+	cursor:pointer;
+	border:1px solid #5576E1;
+	font-family:Arial, sans-serif;
+}
+
+	#add_school:hover, #add_class:hover {
+		background-color:#676767;
+		color:#FFF;
+		text-shadow:#000 1px 1px 1px;
+	}
+	
+/*BACKGROUND*/
+#bg-black {
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:10;
+	background-image:url(/storybooks/img/bg-black-40.png);
+	display:none;
+}
+
+/*Listed books */
+
+#listedBookTable {
+	width:100%;
+}
+
+	
+	#listedBookTable th {
+		width:25%;
+		background-color:#505050;
+		color:#FFF;
+		border:solid 1px #333;
+		cursor:pointer;
+	}
+	
+		#listedBookTable th:hover {
+			background-color:#393939;
+		}
+
+#listedBookTable tr {
+	background-color:#DF0500;
+	color:#001A5F;
+	font-family:Arial, sans-serif;
+	cursor:pointer;
+}
+
+#listedBookTable td {
+	border-bottom:solid 1px #9BA3FF;
+}
+
+	.listed_book a {
+		color:#001A5F;
+		text-shadow:1px 1px -1px #FFF;
+	}
+	
+	.listed_book a:hover {
+		color:#001499;
+		text-shadow:1px 1px -1px #FFF;
+	}
+
+	.listed_title, .listed_instructor, .listed_addDate {
+		width:30%;
+		text-shadow:1px 1px 1px #FFF;
+	}
+	
+	.listed_addDate {
+		width:20%;
+	}
+	
+		.listed_title:hover, .listed_instructor:hover, .listed_addDate:hover {
+			color:#001499;
+		}
+	
+	td.score {
+		width:10%;
+		height:90%;
+		color:#004E18;
+		text-align:center;
+		padding:10px;
+		margin:2.5% 10px;
+		border-left:solid 1px #9BA3FF;
+	}
+	
+.listed_school, .myBook {
+	color:#4B0014;
+	font-size:16px;
+	padding:12px;
+	background-color:#383838;
+	text-align:center;
+	width:9%;
+	height:40px;
+	text-decoration:none;
+	margin:.5%;
+	float:left;
+	border:solid 1px #FF707F;
+}
+
+	.listed_school:hover, .myBook:hover {
+		background-color:#505050;
+		color:#88000E;
+		font-size:16px;
+		border:solid 1px #FFBFC5;
+		box-shadow:0px 0px 10px #FFEEF1;
+		-moz-box-shadow:0px 0px 10px #FFEEF1;
+		-webkit-box-shadow:0px 0px 10px #FFEEF1;
+	}
+	
+	.listed_school a, .myBook a{
+		color:#360002;
+	}
+	
+	.myBook {
+		width:150px;
+		height:150px;
+	}
+	
+	.myBookHover {
+		padding:5px;
+		background-color:#FFF;
+		font-size:11px;
+		border:solid 1px #838383;
+		display:none;
+		position:absolute;
+		width:60px;
+		color:#000;
+	}
+	
+	.removeMyBook {
+		cursor:pointer;
+		color:#820001;
+		font-weight:bold;
+	}
+	
+		.removeMyBook:hover {
+			color:#BE000F;
+		}
+		
+.labels {
+	width:95%;
+	margin:5px 2.5%;
+	text-align:center;
+}
+
+.third {
+	width:25%;
+	float:left;
+	color:#FFF;
+	background-color:#565656;
+	border:solid 1px #1C1C1C;
+	padding:5px;
+}
+
+#dont_see {
+	text-align:center;
+}
+
+
+/*CLASSES*/
+
+.center {
+	text-align:center;
+	width:100%;
+	margin:0 auto;
+}
+
+.white {
+	color:black;
+	text-shadow:-1px 1px 1px #FFF;
+}
+
+img.loader {
+	margin:20px 48%;
+}
+
+.heading {
+	color:#FFF;
+	text-shadow:1px 1px 1px #000;
+}
+
+.clear {
+	clear:both;
+}
+
+.dark_body {
+	background-image:url(/storybooks/img/bg-black-40.png);
+	font-size:14px;
+	padding:20px;
+	width:100%;
+	color:#FFF;
+	float:left;
+}
+
+.dark_body p {
+	font-size:14px;
+}
+
+input.thick {
+	height:28px;
+	font-size:24px;
+}
+
+/*POPUPS*/
+.popupClose {
+	font-size:16px;
+	color:#727272;
+	cursor:pointer;
+	float:right;
+}
+
+	.popupClose:hover {
+		color:#292929;
+	}
+
+/*BUTTONS*/
+
+button.blue {
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border:1px solid #688DF2;
+	font-size:36px;
+	text-shadow:1px 1px 1px #000;
+}
+
+	button.blue:hover {
+		text-shadow:none;
+	}
+
+/*FOOTER*/
+
+#fb_sign_in {
+	border:1px solid #5576E1;
+	font-size:18px;
+	padding:5px 10px;
+	margin:10px auto;
+	color:#FFF;
+	text-shadow:#000 -1px -1px 1px;
+	cursor:pointer;
+	width:50%;
+	text-align:center;
+}
+
+	#fb_sign_in a {
+		color:#FFF;text-decoration:none;
+	}
+	
+	#fb_sign_in:hover {
+		text-shadow:#000 1px 1px 1px;
+	}
+	
+#footer {
+	background-color:#242424;
+	border-top:solid 1px #444;
+	color:#E3E3E3;
+	padding:10px 0px;
+	width:100%;
+	float:left;
+	position:relative;
+	margin-top:20px;
+	list-style-type:none;
+}
+
+	#footer a {
+		color:#F5F5F5;
+	}
+	
+	#footer a:hover {
+		color:#FF8700;
+	}
+	
+.footer_block {
+	width:30%;
+	padding:1%;
+	min-height:190px;
+	border-left:#444 solid 2px;
+	float:left;
+}
+
+#footer_block_left {
+	border-left:none;
+}
+
+/*Text classes*/
+h1.mojave {
+	font-size:68px;
+	color:#FF8700;
+	text-align:center;
+	margin:5px auto;
+	text-shadow:-2px -2px 1px #993D02;
+}
+
+h2.orange {
+	color:#FF8700;
+}
+
+span.focus-blue {
+	color:#4096ee;
+	text-shadow:-2px -2px 1px #2C4999;
+}
+
+span.focus-green {
+	color:#40C700;	
+	text-shadow:-2px -2px 1px #006D18;
+}
+
+span.focus-dkorange {
+	color:#FF8700;	
+	text-shadow:-2px -2px 1px #873E00;
+}

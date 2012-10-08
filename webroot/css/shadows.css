@@ -1,0 +1,23 @@
+div.jp-audio {
+	box-shadow:#818181 0px 0px -5px;
+	-moz-box-shadow:#818181 0px 0px -5px;
+	-webkit-box-shadow:#818181 0px 0px -5px;
+}
+
+.left-page-wrapper, .right-page-wrapper, .book-cover-wrapper, .book-backcover-wrapper {
+	box-shadow:#818181 0px 0px 8px;
+	-moz-box-shadow:#818181 0px 0px 8px;
+	-webkit-box-shadow:#818181 0px 0px 8px;
+}
+
+.callout-shadow {
+	box-shadow:#B0B0B0 0px 0px 8px;
+	-moz-box-shadow:#B0B0B0 0px 0px 8px;
+	-webkit-box-shadow:#B0B0B0 0px 0px 8px;
+}
+
+#translate-word-popup {
+	box-shadow:#696969 2px 2px 4px;
+	-moz-box-shadow:#696969 2px 2px 4px;
+	-webkit-box-shadow:#696969 2px 2px 4px;
+}

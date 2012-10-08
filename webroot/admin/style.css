@@ -1,0 +1,14 @@
+html, body {
+	padding:0;
+	margin:0;
+	font-family: Arial, sans-serif;
+}
+
+#body_wrapper {
+	margin:20px;
+}
+
+#results {
+	padding:10px;
+	background-color:#FFEED8;
+}
